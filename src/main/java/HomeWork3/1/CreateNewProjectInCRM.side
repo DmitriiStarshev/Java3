@@ -1,0 +1,229 @@
+{
+  "id": "9f00f595-e33b-48c2-ae1f-6a912dba6967",
+  "version": "2.0",
+  "name": "CreateNewProjectInCRM",
+  "url": "https://crm.geekbrains.space",
+  "tests": [{
+    "id": "c4edfe93-c774-4226-b0da-e0d86e2e43c3",
+    "name": "CreateNewProjectInCRM",
+    "commands": [{
+      "id": "d4e4f231-b42d-404d-8fb0-877fda29fd69",
+      "comment": "",
+      "command": "open",
+      "target": "/user/login",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "22e5cec0-2343-46c9-8e09-870a537bded6",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1058x812",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "1e15a157-5d63-4ff0-b261-9d13c8710c26",
+      "comment": "",
+      "command": "click",
+      "target": "id=prependedInput",
+      "targets": [
+        ["id=prependedInput", "id"],
+        ["name=_username", "name"],
+        ["css=#prependedInput", "css:finder"],
+        ["xpath=//input[@id='prependedInput']", "xpath:attributes"],
+        ["xpath=//form[@id='login-form']/fieldset/div/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "5872d900-f9ce-4832-822e-7547ad09116a",
+      "comment": "",
+      "command": "type",
+      "target": "id=prependedInput",
+      "targets": [
+        ["id=prependedInput", "id"],
+        ["name=_username", "name"],
+        ["css=#prependedInput", "css:finder"],
+        ["xpath=//input[@id='prependedInput']", "xpath:attributes"],
+        ["xpath=//form[@id='login-form']/fieldset/div/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "Applanatest1"
+    }, {
+      "id": "10dbf718-0503-4600-891c-afa3867f64f4",
+      "comment": "",
+      "command": "click",
+      "target": "id=prependedInput2",
+      "targets": [
+        ["id=prependedInput2", "id"],
+        ["name=_password", "name"],
+        ["css=#prependedInput2", "css:finder"],
+        ["xpath=//input[@id='prependedInput2']", "xpath:attributes"],
+        ["xpath=//form[@id='login-form']/fieldset/div[2]/input", "xpath:idRelative"],
+        ["xpath=//div[2]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "12691058-a8a3-41d1-a44f-0d88e9b4da6a",
+      "comment": "",
+      "command": "type",
+      "target": "id=prependedInput2",
+      "targets": [
+        ["id=prependedInput2", "id"],
+        ["name=_password", "name"],
+        ["css=#prependedInput2", "css:finder"],
+        ["xpath=//input[@id='prependedInput2']", "xpath:attributes"],
+        ["xpath=//form[@id='login-form']/fieldset/div[2]/input", "xpath:idRelative"],
+        ["xpath=//div[2]/input", "xpath:position"]
+      ],
+      "value": "Student2020!"
+    }, {
+      "id": "2c9974e4-58db-439e-8375-551fa490e814",
+      "comment": "",
+      "command": "click",
+      "target": "id=_submit",
+      "targets": [
+        ["id=_submit", "id"],
+        ["name=_submit", "name"],
+        ["css=#\\_submit", "css:finder"],
+        ["xpath=//button[@id='_submit']", "xpath:attributes"],
+        ["xpath=//form[@id='login-form']/fieldset/div[3]/button", "xpath:idRelative"],
+        ["xpath=//button", "xpath:position"],
+        ["xpath=//button[contains(.,'Войти')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "0ff80830-2ec0-41f8-bfae-ec522668f081",
+      "comment": "",
+      "command": "mouseOver",
+      "target": "linkText=Проекты",
+      "targets": [
+        ["linkText=Проекты", "linkText"],
+        ["css=.dropdown:nth-child(3) > .unclickable", "css:finder"],
+        ["xpath=//div[@id='main-menu']/ul/li[3]/a", "xpath:idRelative"],
+        ["xpath=(//a[contains(@href, '#')])[8]", "xpath:href"],
+        ["xpath=//div[2]/ul/li[3]/a", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "679423ca-8916-46ae-90d1-23b1b9259fa9",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Все проекты",
+      "targets": [
+        ["css=.dropdown:nth-child(3) .first .title", "css:finder"],
+        ["xpath=//div[@id='main-menu']/ul/li[3]/ul/li[3]/a/span", "xpath:idRelative"],
+        ["xpath=//li[3]/ul/li[3]/a/span", "xpath:position"],
+        ["xpath=//span[contains(.,'Все проекты')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "06344bc1-7f95-4279-8906-df8d24a941cb",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Создать проект",
+      "targets": [
+        ["linkText=Создать проект", "linkText"],
+        ["css=.back", "css:finder"],
+        ["xpath=(//a[contains(text(),'Создать проект')])[3]", "xpath:link"],
+        ["xpath=//div[@id='container']/div/div/div/div[2]/div/div/a", "xpath:idRelative"],
+        ["xpath=(//a[contains(@href, '/project/create/')])[3]", "xpath:href"],
+        ["xpath=//div[2]/div/div/a", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "f8c1e963-dc69-4ae8-8d49-e162bcde062b",
+      "comment": "",
+      "command": "type",
+      "target": "name=crm_project[name]",
+      "targets": [
+        ["id=crm_project_name-uid-611c02fdea3bd", "id"],
+        ["name=crm_project[name]", "name"],
+        ["css=#crm_project_name-uid-611c02fdea3bd", "css:finder"],
+        ["xpath=//input[@id='crm_project_name-uid-611c02fdea3bd']", "xpath:attributes"],
+        ["xpath=//form[@id='crm_project-uid-611c02fe58e7f']/div[2]/div[3]/div/div/div[2]/fieldset/div/div/div[2]/input", "xpath:idRelative"],
+        ["xpath=//div/div/div[2]/input", "xpath:position"]
+      ],
+      "value": "StudentDStarshev"
+    }, {
+      "id": "a75c04c4-6693-48b5-8c82-e9581358c871",
+      "comment": "",
+      "command": "click",
+      "target": "//span[text()='Укажите организацию']",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "9967beb9-7c6b-4883-86fe-cb7381979f00",
+      "comment": "",
+      "command": "click",
+      "target": "//div[text()='«Все организации»']",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "9a0b1f31-f541-425b-ba3a-e3fa70fc1e19",
+      "comment": "",
+      "command": "select",
+      "target": "//select[@name='crm_project[priority]']",
+      "targets": [],
+      "value": "Низкий"
+    }, {
+      "id": "ecfc5b0a-c003-4a0a-85f7-4b76b73e09a5",
+      "comment": "",
+      "command": "select",
+      "target": "//select[@name='crm_project[financeSource]']",
+      "targets": [],
+      "value": "label=Из средств заказчика"
+    }, {
+      "id": "dbf235a8-b5b6-401a-9cba-cfdf8b8dd845",
+      "comment": "",
+      "command": "select",
+      "target": "//select[@name='crm_project[businessUnit]']",
+      "targets": [],
+      "value": "label=Research & Development"
+    }, {
+      "id": "43a7abd9-49a0-45d9-a8b7-1fea398a635e",
+      "comment": "",
+      "command": "select",
+      "target": "//select[@name='crm_project[curator]']",
+      "targets": [],
+      "value": "label=Амелин Владимир"
+    }, {
+      "id": "c90b4be1-d649-4b64-9f29-a25529d72ef2",
+      "comment": "",
+      "command": "select",
+      "target": "//select[@name='crm_project[rp]']",
+      "targets": [],
+      "value": "label=Амелин Владимир"
+    }, {
+      "id": "5066f4e4-689a-49c2-8c7e-316b63bcf9a5",
+      "comment": "",
+      "command": "select",
+      "target": "//select[@name='crm_project[manager]']",
+      "targets": [],
+      "value": "label=Антонов Дмитрий"
+    }, {
+      "id": "10cfcf22-ac41-44a3-9595-0f95e16e7a5b",
+      "comment": "",
+      "command": "click",
+      "target": "//button[contains(text(),'Сохранить и закрыть')]",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "1883757b-7b7d-4b1c-9635-884b29519bc2",
+      "comment": "",
+      "command": "assertText",
+      "target": "//span[@class='validation-failed']",
+      "targets": [],
+      "value": "Это значение уже используется."
+    }]
+  }],
+  "suites": [{
+    "id": "f399add0-d361-4d61-b98f-c90bb8b4f6ee",
+    "name": "Default Suite",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": ["c4edfe93-c774-4226-b0da-e0d86e2e43c3"]
+  }],
+  "urls": ["https://crm.geekbrains.space/"],
+  "plugins": []
+}

@@ -1,0 +1,151 @@
+{
+  "id": "fc2c80b2-ef7b-4142-979a-9a6b0047c1c8",
+  "version": "2.0",
+  "name": "CreateNewAccountIVI",
+  "url": "https://www.ivi.ru",
+  "tests": [{
+    "id": "07117da8-d42f-4d3e-9c69-3ce91ee32536",
+    "name": "CreateNewAccountIVI",
+    "commands": [{
+      "id": "cdabc525-75db-42fe-b117-e76305b73aa8",
+      "comment": "",
+      "command": "open",
+      "target": "/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "44a5e3e7-0b26-4973-aa07-e682a1777350",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1053x807",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "6c768be8-d32b-47ca-9831-5e5b08e3fc0e",
+      "comment": "",
+      "command": "click",
+      "target": "css=.nbl-icon_avatar_20",
+      "targets": [
+        ["css=.nbl-icon_avatar_20", "css:finder"],
+        ["xpath=//header[@id='menuContainer']/div/div/div/div/div/div[5]/a/div/div", "xpath:idRelative"],
+        ["xpath=//div[5]/a/div/div", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "3b5c6c2f-778d-4c6b-8e85-2ef955f21735",
+      "comment": "",
+      "command": "click",
+      "target": "css=.button__primaryText",
+      "targets": [
+        ["css=.button__primaryText", "css:finder"],
+        ["xpath=//div[@id='root']/div/div/div/div/button/span[2]", "xpath:idRelative"],
+        ["xpath=//span[2]", "xpath:position"],
+        ["xpath=//span[contains(.,'Войти или зарегистрироваться')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "3e1f6c89-7072-4c4f-8ab7-def4dcf06bb2",
+      "comment": "",
+      "command": "click",
+      "target": "css=*[data-test=\"input_login\"]",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "2fb08af0-0531-45ec-9ca5-940bba2e7107",
+      "comment": "",
+      "command": "type",
+      "target": "//input[@name='email']",
+      "targets": [],
+      "value": "gbtester@mail.ru"
+    }, {
+      "id": "29ac66eb-18b6-41bc-9646-9b11b4777ce1",
+      "comment": "",
+      "command": "click",
+      "target": "css=.nbl-button_style_kioshi > .nbl-button__primaryText",
+      "targets": [
+        ["css=.nbl-button_style_kioshi > .nbl-button__primaryText", "css:finder"],
+        ["xpath=//div[@id='modal-container']/div/div[2]/div/div/div[2]/div/div/div/form/div[4]/div/div/button/div", "xpath:idRelative"],
+        ["xpath=//div[4]/div/div/button/div", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "1ad2afea-cefd-4805-b2bc-7a7d91c3c1f7",
+      "comment": "",
+      "command": "runScript",
+      "target": "window.scrollTo(0,0)",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "69aed5f3-ee40-4f84-91ab-71affbec721f",
+      "comment": "",
+      "command": "click",
+      "target": "css=*[data-test=\"button_continue\"]",
+      "targets": [
+        ["css=*[data-test=\"button_continue\"]", "css:data-attr"],
+        ["css=.nbl-button_style_kioshi", "css:finder"],
+        ["xpath=//div[@id='modal-container']/div/div[2]/div/div/div[2]/div/div/div/div/div[4]/div/div/button", "xpath:idRelative"],
+        ["xpath=//div[4]/div/div/button", "xpath:position"],
+        ["xpath=//button[contains(.,'Прочитано, соглашаюсь')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "04d25ff0-7314-481d-a93a-f22ff6419782",
+      "comment": "",
+      "command": "runScript",
+      "target": "window.scrollTo(0,0)",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "27a5306c-f290-4411-8c50-f979763c0131",
+      "comment": "",
+      "command": "type",
+      "target": "//input[@type='password']",
+      "targets": [
+        ["css=*[data-test=\"input_password\"]", "css:data-attr"],
+        ["css=.nbl-input__editbox", "css:finder"],
+        ["xpath=//input[@value='12314123']", "xpath:attributes"],
+        ["xpath=//div[@id='modal-container']/div/div[2]/div/div/div[2]/div/div/div/form[2]/div[2]/div/div/div/div/input", "xpath:idRelative"],
+        ["xpath=//div/input", "xpath:position"]
+      ],
+      "value": "12314123"
+    }, {
+      "id": "aaa68475-a86f-45ba-afc5-3206f5fd0117",
+      "comment": "",
+      "command": "click",
+      "target": "//div[text()='Войти']",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "483756e0-d0d4-4836-9783-d032d2105706",
+      "comment": "",
+      "command": "click",
+      "target": "//a[@title='Нажмите, чтобы закрыть форму']",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "577d5ab2-31fe-41e7-bc3b-79ff9b8b74bb",
+      "comment": "",
+      "command": "click",
+      "target": "//div[contains(text(),'Выйти')]",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "e17227ef-b33a-44ab-baa2-56b099788299",
+      "comment": "",
+      "command": "assertText",
+      "target": "//div[contains(text(),'Подарите подписку близким')]",
+      "targets": [],
+      "value": "Подарите подписку близким"
+    }]
+  }],
+  "suites": [{
+    "id": "91271d63-534b-41ad-8e17-83bce4a257f0",
+    "name": "Default Suite",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": ["07117da8-d42f-4d3e-9c69-3ce91ee32536"]
+  }],
+  "urls": ["https://www.ivi.ru/"],
+  "plugins": []
+}
