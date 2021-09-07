@@ -1,4 +1,4 @@
-package src.test.java.org.LessonTest4.HomeWorkt4Test;
+package src.test.java.org.HomeWorkt4Test;
 
 import HomeWork4.BadTriangleException;
 import org.junit.Test;

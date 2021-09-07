@@ -1,4 +1,4 @@
-package src.test.java.org.LessonTest5;
+package src.test.java.org.Lesson6Test;
 
 import io.github.bonigarcia.wdm.WebDriverManager;
 import io.qameta.allure.Allure;

@@ -1,4 +1,4 @@
-package src.test.java.org.LessonTest4.Lesson5;
+package src.test.java.org.Lesson5Test;
 
 import io.github.bonigarcia.wdm.WebDriverManager;
 import org.junit.jupiter.api.AfterEach;

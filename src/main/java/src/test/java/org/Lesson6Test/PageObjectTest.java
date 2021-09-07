@@ -1,4 +1,4 @@
-package src.test.java.org.LessonTest5;
+package src.test.java.org.Lesson6Test;
 
 import Lesson6.CreateExpensePage;
 import Lesson6.ExpensesRequestsPage;
